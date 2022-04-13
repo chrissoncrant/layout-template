@@ -182,7 +182,8 @@ footer {
     }
 
     .item > img {
-        max-width: 45%;
+        max-width: 65%;
+        max-height: 65%
     }
 
 }
