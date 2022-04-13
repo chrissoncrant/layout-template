@@ -159,7 +159,12 @@ footer {
 
     #hamburger-links a {
         border: none;
-        padding: 0;
+        padding: 5px 10px;
+    }
+
+    #hamburger-links a:hover {
+        border: 1px black solid;
+        padding: 5px 10px;
     }
 
     #hamburger-icon {
