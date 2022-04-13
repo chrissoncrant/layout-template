@@ -91,7 +91,7 @@ a:hover {
 }
 
 .hero {
-    background: linear-gradient(177.72deg, #778472 1.77%, #FCF7FF 97.85%);
+    background: linear-gradient(177.72deg, #ffffff 1.77%, #FCF7FF 97.85%);
     height: calc(50vh - 88.8px);
     display: flex;
     justify-content: center;
