@@ -51,6 +51,9 @@ p {
 
 header {
     background: linear-gradient(90.66deg, #84F12E 0%, #00FFC2 100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 #desktop-menu ul {
@@ -96,6 +99,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 90px;
 
 }
 
@@ -107,7 +111,7 @@ a:hover {
 }
 
 .item {
-    background: linear-gradient(203.69deg, #020887 22.07%, rgba(51, 65, 149, 0.53) 115.88%);
+    background: linear-gradient(203.69deg, #020887 22.07%, rgb(58, 83, 223) 115.88%);
     height: 250px;
     border-radius: 10px;
     box-shadow: 5px 10px 15px #778472;
@@ -176,6 +180,10 @@ footer {
     #hamburger-icon {
         border: none;
         width: 65px;
+    }
+
+    .item:hover {
+        transform: scale(1.05);
     }
 
     .item > img {
