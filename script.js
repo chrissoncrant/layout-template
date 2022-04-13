@@ -12,4 +12,7 @@ function showHideMenu() {
     };
 }
 
-hamburgerMenu.addEventListener('click', showHideMenu)
+hamburgerMenu.addEventListener('click', (e) => {
+    e.preventDefault();
+    showHideMenu();
+})
