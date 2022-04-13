@@ -15,6 +15,7 @@
 html, body {
     height: 100%;
     font-size: 18px;
+    background-color: #FCF7FF;
 }
 
 body {
@@ -52,14 +53,14 @@ header {
     background: linear-gradient(90.66deg, #84F12E 0%, #00FFC2 100%);
 }
 
-nav ul, ul {
+#desktop-menu ul {
     list-style: none;
     padding: 0;
     display: flex;
     align-items: center;
 }
 
-nav > ul {
+#desktop-menu > ul {
     justify-content: space-between;
 }
 
@@ -83,6 +84,10 @@ a {
 
 a:hover {
     background-color: #10FFD4;
+}
+
+#hamburger-container {
+    display: none;
 }
 
 .hero {
@@ -120,7 +125,55 @@ footer {
     padding: 15px 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
+    html {
+        font-size: 14px;
+    }
+
+    #desktop-menu {
+        display: none;
+    }
+
+    #hamburger-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    #hamburger-header-logo {
+        width: 70px;
+        margin: 10px;
+    }
+
+    #hamburger-links {
+        list-style: none;
+        padding: 0 0 10px 0;
+        /* display: none; */
+    }
+
+    #hamburger-links li {
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    #hamburger-links a {
+        border: none;
+        padding: 0;
+    }
+
+    #hamburger-icon {
+        border: none;
+        width: 65px;
+    }
+
+    .item > img {
+        max-width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 685px) {
     html {
         font-size: 14px;
     }
