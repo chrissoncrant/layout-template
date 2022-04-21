@@ -85,8 +85,12 @@ a {
     font-size: 1rem;
 }
 
-a:hover {
+nav a:hover {
     background-color: #10FFD4;
+}
+
+nav a#contact-link:hover {
+    background-color: #84F12E;
 }
 
 #hamburger-container {
