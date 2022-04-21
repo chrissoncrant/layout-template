@@ -106,7 +106,7 @@ a:hover {
 .content {
     display: grid;
     margin: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -126,12 +126,19 @@ a:hover {
 }
 
 .item > img {
-    max-width: 65%;
+    max-height: 85%;
+    width: auto;
 }
 
 footer {
     text-align: center;
     padding: 15px 0;
+}
+
+@media screen and (max-width: 1120px) {
+    .content {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -180,12 +187,6 @@ footer {
         border: none;
         width: 65px;
     }
-
-    .item > img {
-        max-width: 65%;
-        max-height: 65%
-    }
-
 }
 
 @media screen and (max-width: 685px) {
